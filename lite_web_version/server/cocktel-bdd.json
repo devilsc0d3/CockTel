@@ -1,0 +1,21 @@
+{
+  "Shot": {
+    "Name": "A.B.C",
+    "Story": "",
+    "ingredient": [
+      null,
+      "Amaretto",
+      "Bailey",
+      "Cognac"
+    ]
+  },
+  "orgasm": {
+    "Name": "Orgasm",
+    "Story": "Le nom \"Orgasm\" est évidemment évocateur et a sans aucun doute contribué à la popularité de ce cocktail. Il est souvent servi comme digestif ou comme cocktail après-dîner dans les bars et les restaurants du monde entier. Bien que son origine précise soit incertaine, le cocktail Orgasm reste un classique de la mixologie, apprécié pour son goût sucré et crémeux, ainsi que pour sa réputation provocante.",
+    "ingredient": [
+      null,
+      "Get 27",
+      "Bailey"
+    ]
+  }
+}
