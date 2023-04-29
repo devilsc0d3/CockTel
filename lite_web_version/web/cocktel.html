@@ -2,9 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cocktel</title>
+    <title>Cocktail List</title>
 </head>
 <body>
-<h1>CockTel</h1>
+<h1>Liste des Cocktails</h1>
+<ul>
+    <% data.forEach(cocktail => { %>
+    <li>
+        <h2><%= cocktail.Name %></h2>
+    </li>
+    <% }) %>
+</ul>
 </body>
 </html>
