@@ -4,41 +4,100 @@
         <meta charset="UTF-8">
         <title>Cocktail List</title>
     </head>
-
     <style>
         body {
             margin: 0;
             padding: 0;
+            color: black;
         }
 
-        h1 {
+        h1.title {
             margin: 0;
+            font-family: Broadway, serif;
+            text-shadow: -4px 3px 0 #cc7878, -14px 7px 0 #0a0e27;
+        }
+
+        h2 {
+            color: black;
+            text-align: center;
+            font-family: "Bauhaus 93", serif;
+            font-weight: 500;
+            font-size: 40px;
+        }
+
+        h3 {
+            color: black;
+            text-align: center;
+            font-family: rockwell, serif;
+            font-weight: 500;
+            font-size: 40px;
+        }
+
+        p {
+            color: black;
+            font-family: rockwell, serif;
         }
 
         header {
             margin: 0;
-            background-color: #064496;
+            background-color: #d08871;
             text-align: center;
             font-size: 35px;
             color: white;
             height: 100px;
         }
 
+        footer {
+            margin-top: 200px;
+            background-color: #d08871;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+            height: 100px;
+        }
+
         .cocktail {
-            margin: 0;
-            background-color: #064496;
+            margin: auto;
+            width: 80%;
             text-align: center;
             font-size: 35px;
-            color: white;
-            border-radius: 50px;
+            border-radius: 25px;
+            transition: 300ms ease-in-out;
+            box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
+
+        }
+
+        .cocktail:hover {
+            scale: 1.1;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+        }
+
+        .txt {
+            margin: 40px;
+            font-size: 40px;
+            color: #d08871;
+            font-family: "Bauhaus 93", serif;
+            font-weight: 500;
         }
     </style>
 
     <body>
         <header>
-            <h1>CockTels & Shots</h1>
+            <h1 class="title">CockTels & Shots</h1>
         </header>
 
+        <div class="menu">
+            <p class="txt">Home</p>
+            <p class="txt">Research</p>
+            <p class="txt">Contact</p>
+            <p class="txt">Information</p>
+        </div>
+
+        <h3>Last Shooters :</h3>
         <ul>
             <% data.forEach(cocktail => { %>
                 <div class="cocktail">
@@ -48,5 +107,6 @@
                 </div>
             <% }) %>
         </ul>
+
     </body>
 </html>
