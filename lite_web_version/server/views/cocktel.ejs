@@ -1,18 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Cocktail List</title>
-</head>
-<body>
-<h1>Liste des Cocktails</h1>
-<ul>
-    <% data.forEach(cocktail => { %>
-        <li>
-            <h2><%= cocktail.Name %></h2>
-            <h2><%= cocktail.ingredient %></h2>
-        </li>
-    <% }) %>
-</ul>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cocktail List</title>
+    </head>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        header {
+            margin: 0;
+            background-color: #064496;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+            height: 100px;
+        }
+
+        .cocktail {
+            margin: 0;
+            background-color: #064496;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+            border-radius: 50px;
+        }
+    </style>
+
+    <body>
+        <header>
+            <h1>CockTels & Shots</h1>
+        </header>
+
+        <ul>
+            <% data.forEach(cocktail => { %>
+                <div class="cocktail">
+                    <h2><%= cocktail.name %></h2>
+                    <p><%= cocktail.ingredient %></p>
+                    <p><%= cocktail.tags %></p>
+                </div>
+            <% }) %>
+        </ul>
+    </body>
 </html>
